@@ -1,5 +1,11 @@
 # tiptap-text-direction
 
+## 1.0.0-napkin
+
+### Major Changes
+
+- 0467c75: Don't update DOM while IME composition is active
+
 ## 0.3.1
 
 ### Patch Changes

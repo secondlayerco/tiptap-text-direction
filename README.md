@@ -1,3 +1,24 @@
+# @secondlayerco/tiptap-text-direction
+
+## Description
+Forked from [amirhhashemi/tiptap-text-direction](https://github.com/amirhhashemi/tiptap-text-direction).
+
+### Changes from the original package
+- Don't update DOM while IME composition is active
+
+## Installation
+Add the package to your project:
+```bash
+"tiptap-text-direction": "github:secondlayerco/tiptap-text-direction#1.0.0-napkin",
+```
+
+## How to update the package
+- Make changes to the package
+- Build the package with `npm run build`
+- Increment the version in `package.json` and `CHANGELOG.md`
+
+# Original README.md
+
 This extension automatically detects the direction of a configurable list of nodes and adds `dir="ltr"` or `dir="rtl"` to them.
 
 **Why not `dir="auto"`?**

@@ -29,7 +29,7 @@ const validDirections = ["ltr", "rtl", "auto"] as const;
 type Direction = (typeof validDirections)[number];
 
 let isComposing = false;
-let compositionTimeout: number | undefined;
+let compositionTimeout: NodeJS.Timeout | undefined;
 
 function TextDirectionPlugin({ types }: { types: string[] }) {
   return new Plugin({
