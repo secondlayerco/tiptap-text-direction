@@ -28,10 +28,17 @@ const validDirections = ["ltr", "rtl", "auto"] as const;
 
 type Direction = (typeof validDirections)[number];
 
+let isComposing = false;
+let compositionTimeout: number | undefined;
+
 function TextDirectionPlugin({ types }: { types: string[] }) {
   return new Plugin({
     key: new PluginKey("textDirection"),
     appendTransaction: (transactions, oldState, newState) => {
+      if (isComposing) {
+        return null; // Skip updates during IME composition
+      }
+
       const docChanges = transactions.some(
         (transaction) => transaction.docChanged
       );
@@ -58,6 +65,27 @@ function TextDirectionPlugin({ types }: { types: string[] }) {
       });
 
       return modified ? tr : null;
+    },
+    props: {
+      handleDOMEvents: {
+        compositionstart: () => {
+          if (!isComposing) {
+            isComposing = true;
+
+            clearTimeout(compositionTimeout);
+            compositionTimeout = setTimeout(() => {
+              isComposing = false; // Assume composition ended.
+            }, 2000);
+          }
+
+          return false;
+        },
+        compositionend: () => {
+          isComposing = false;
+          clearTimeout(compositionTimeout);
+          return false;
+        },
+      },
     },
   });
 }
