@@ -1,5 +1,11 @@
 # tiptap-text-direction
 
+## [1.0.2-napkin] (2025-05-06)
+
+## Updated
+- Upgraded @tiptap/core to 2.12.0
+- Upgraded @tiptap/pm to 2.12.0
+
 ## 1.0.0-napkin
 
 ### Major Changes
