@@ -1,6 +1,6 @@
 {
   "name": "tiptap-text-direction",
-  "version": "1.0.2-napkin",
+  "version": "1.0.3-napkin",
   "description": "Text direction extension for Tiptap",
   "private": false,
   "license": "MIT",
@@ -27,14 +27,14 @@
     "release": "pnpm check && pnpm build && changeset publish"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.28.1",
-    "@tiptap/core": "^2.12.0",
-    "@tiptap/pm": "^2.12.0",
+    "@changesets/cli": "^2.29.5",
+    "@tiptap/core": "^2.24.0",
+    "@tiptap/pm": "^2.24.0",
     "tsup": "^6.7.0",
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.3"
   },
   "peerDependencies": {
-    "@tiptap/core": "^2.12.0",
-    "@tiptap/pm": "^2.12.0"
+    "@tiptap/core": "^2.24.0",
+    "@tiptap/pm": "^2.24.0"
   }
 }
