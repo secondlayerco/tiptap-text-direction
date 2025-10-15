@@ -129,9 +129,9 @@ var TextDirection = Extension.create({
     ];
   }
 });
-var src_default = TextDirection;
+var index_default = TextDirection;
 export {
   TextDirection,
-  src_default as default,
+  index_default as default,
   getTextDirection
 };
