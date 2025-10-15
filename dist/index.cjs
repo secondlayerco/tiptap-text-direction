@@ -18,13 +18,13 @@ var __copyProps = (to, from, except, desc) => {
 var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
 
 // src/index.ts
-var src_exports = {};
-__export(src_exports, {
+var index_exports = {};
+__export(index_exports, {
   TextDirection: () => TextDirection,
-  default: () => src_default,
+  default: () => index_default,
   getTextDirection: () => getTextDirection
 });
-module.exports = __toCommonJS(src_exports);
+module.exports = __toCommonJS(index_exports);
 var import_core = require("@tiptap/core");
 var import_state = require("@tiptap/pm/state");
 var RTL = "\u0591-\u07FF\uFB1D-\uFDFD\uFE70-\uFEFC";
@@ -155,7 +155,7 @@ var TextDirection = import_core.Extension.create({
     ];
   }
 });
-var src_default = TextDirection;
+var index_default = TextDirection;
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
   TextDirection,

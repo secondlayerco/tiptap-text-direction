@@ -1,5 +1,14 @@
 # tiptap-text-direction
 
+## [1.1.0-napkin] (2025-10-0)
+
+## Updated
+- Upgraded @tiptap/core to 3.7.0
+- Upgraded @tiptap/pm to 3.7.0
+- Upgraded tsup to 8.5.0
+- Upgraded typescript to 5.9.3
+- Compatible with Tiptap v3
+
 ## [1.0.3-napkin] (2025-07-03)
 
 ## Updated
